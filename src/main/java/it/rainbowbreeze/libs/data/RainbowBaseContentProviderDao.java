@@ -131,7 +131,7 @@ public abstract class RainbowBaseContentProviderDao<T extends RainbowSettableId>
      * @param context
      * @param itemToAdd: the item to add
      * 
-     * @return the id of the new item, otherwise {@link AppEnv#NOT_FOUND} is
+     * @return the id of the new item, otherwise {@link #NOT_FOUND} is
      *  some errors happened
      */
     public long insertItem(Context context, T itemToAdd) {
@@ -200,7 +200,7 @@ public abstract class RainbowBaseContentProviderDao<T extends RainbowSettableId>
     /**
      * Return true if the item already exists in the storage
      * 
-     * @param Context
+     * @param context
      * @param itemId
      * @return
      */

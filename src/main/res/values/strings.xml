@@ -1,2 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="rainbow_lblAreYouSure">Are you sure?</string>
+    <string name="rainbow_btnYes">Yes</string>
+    <string name="rainbow_btnCancel">Cancel</string>
+
 </resources>

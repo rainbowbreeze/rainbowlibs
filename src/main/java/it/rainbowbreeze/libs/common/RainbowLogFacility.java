@@ -66,7 +66,7 @@ import android.util.Log;
  W    Warn
  E    Error
  F    Fatal
- S    Silent (supress all output)
+ S    Silent (suppress all output)
 
  '*' means '*:d' and <tag> by itself means <tag>:v
 

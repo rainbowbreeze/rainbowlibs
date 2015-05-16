@@ -23,7 +23,7 @@ import android.content.Context;
 import android.test.ProviderTestCase2;
 
 /**
- * Base class to test a particular {@link it.rainbowbreeze.libs.data.RainbowBaseContentProviderDaoTest}
+ * Base class to test a particular {@link RainbowBaseContentProviderDaoTest}
  * implementation.
  * Performs some generic CRUD tests, then can be extended with custom tests.
  * 
