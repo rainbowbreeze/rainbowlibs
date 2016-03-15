@@ -31,6 +31,10 @@ public interface IRainbowLogFacility {
 
     public void e(String methodName, String message, Exception e);
 
+    public void w(String message);
+
+    public void w(String methodName, String message);
+
     public void i(String message);
 
     public void i(String methodName, String message);

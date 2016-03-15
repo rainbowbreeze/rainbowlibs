@@ -142,6 +142,18 @@ public class RainbowLogFacility implements IRainbowLogFacility {
     /* (non-Javadoc)
      * @see it.rainbowbreeze.libs.common.IRainbowLogFacility#i(java.lang.String)
      */
+    public void w(String message)
+    { log(Log.WARN, message); }
+
+    /* (non-Javadoc)
+     * @see it.rainbowbreeze.libs.common.IRainbowLogFacility#i(java.lang.String, java.lang.String)
+     */
+    public void w(String methodName, String message)
+    { log(Log.WARN, formatSectionName(methodName, message)); }
+
+    /* (non-Javadoc)
+     * @see it.rainbowbreeze.libs.common.IRainbowLogFacility#i(java.lang.String)
+     */
     public void i(String message)
     { log(Log.INFO, message); }
 
@@ -194,13 +206,15 @@ public class RainbowLogFacility implements IRainbowLogFacility {
             Log.e(mTag, msgToLog);
             return;
         }
-        if (BuildConfig.DEBUG) return;
+        if (!BuildConfig.DEBUG) return;
         if (Log.VERBOSE == level) {
             Log.v(mTag, msgToLog);
         } else if (Log.DEBUG == level) {
             Log.d(mTag, msgToLog);
         } else if (Log.INFO == level) {
             Log.i(mTag, msgToLog);
+        } else if (Log.WARN == level) {
+            Log.w(mTag, msgToLog);
         }
     }
 
